@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Zimbabwe Geolocation Tool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="controls">
+    <input type="text" id="searchInput" placeholder="Search villages, clinics, schools..." autocomplete="off" />
+    <select id="typeFilter">
+      <option value="">All Types</option>
+      <option value="clinic">Clinic</option>
+      <option value="school">School</option>
+      <option value="road">Road</option>
+      <option value="ward">Ward</option>
+      <option value="village">Village</option>
+      <option value="building">Building</option>
+    </select>
+    <ul id="results"></ul>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+  margin: 0; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column; height: 100vh;
+}
+#controls {
+  padding: 10px;
+  background: #f4f4f4;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+#searchInput, #typeFilter {
+  padding: 8px;
+  font-size: 1rem;
+  flex-grow: 1;
+  max-width: 300px;
+}
+#results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 160px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 500px;
+}
+#results li {
+  padding: 6px 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+#results li:hover {
+  background-color: #ddd;
+}
+#map {
+  flex-grow: 1;
+}
